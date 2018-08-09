@@ -1,0 +1,41 @@
+<mvc:View controllerName="randomizer.ui.ui.controller.Worklist" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" displayBlock="true">
+	<Page showHeader="true" title="SAP CoE Randomizer" class="sapUiResponsiveContentPadding">
+		<content>
+			<l:Grid defaultSpan="L3 M3 S12" class="sapUiSmallMarginTop">
+				<l:content>
+					<ObjectListItem id="productitem-small-0" title="{random>/Sectors}" intro="Sector" icon="sap-icon://building"></ObjectListItem>
+					<ObjectListItem id="productitem-small-1" title="{random>/EmergingTechnologies}" intro="Emerging Technologies" icon="sap-icon://lab"></ObjectListItem>
+					<ObjectListItem id="productitem-small-2" title="{random>/Processes}" intro="Processes" icon="sap-icon://process"></ObjectListItem>
+					<ObjectListItem id="productitem-small-3" title="{random>/SAPProducts}" intro="SAP Products" icon="sap-icon://product"></ObjectListItem>
+					<Button id="productitem-large-1" text="Randomize!" press="readNumberOfElements" width="100%" type="Emphasized">
+						<layoutData>
+							<l:GridData span="L12 M12 S12"/>
+						</layoutData>
+					</Button>
+				</l:content>
+			</l:Grid>
+			<Panel expandable="true" expanded="false" width="auto" class="sapUiResponsiveMargin">
+				<headerToolbar>
+					<Toolbar height="3rem">
+						<Title text="Submit Experiment"/>
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://message-information" press="handlePopoverPress"/>
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+						labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+						singleContainerFullSize="false">
+						<f:content>
+							<Label text="E-mail"/>
+							<Input id="email" type="Email"/>
+							<Label text="Short description of experiment"/>
+							<TextArea rows="8"/>
+						</f:content>
+					</f:SimpleForm>
+					<Button text="Submit" width="100%"/>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+</mvc:View>

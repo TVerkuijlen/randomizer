@@ -1,0 +1,37 @@
+{
+	"format_version": 1,
+	"imports": [
+		{
+			"target_table": "RANDOMIZER_EMERGINGTECHNOLOGIES",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "EmergingTechnologies.csv",
+				"has_header": true
+			}
+		},
+		{
+			"target_table": "RANDOMIZER_PROCESSES",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "Processes.csv",
+				"has_header": true
+			}
+		},
+		{
+			"target_table": "RANDOMIZER_SAPPRODUCTS",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "SAPProducts.csv",
+				"has_header": true
+			}
+		},
+		{
+			"target_table": "RANDOMIZER_SECTORS",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "Sectors.csv",
+				"has_header": true
+			}
+		}
+	]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+  <edmx:DataServices m:DataServiceVersion="2.0">
+    <Schema Namespace="CatalogService" Alias="CatalogService" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="EntityContainer" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="Sectors" EntityType="CatalogService.Sectors"/>
+        <EntitySet Name="EmergingTechnologies" EntityType="CatalogService.EmergingTechnologies"/>
+        <EntitySet Name="Processes" EntityType="CatalogService.Processes"/>
+        <EntitySet Name="SAPProducts" EntityType="CatalogService.SAPProducts"/>
+      </EntityContainer>
+      <EntityType Name="Sectors" Abstract="false" OpenType="false">
+        <Key>
+          <PropertyRef Name="id"/>
+        </Key>
+        <Property Name="id" Type="Edm.Int32" Nullable="false"/>
+        <Property Name="desciption" Type="Edm.String"/>
+      </EntityType>
+      <EntityType Name="EmergingTechnologies" Abstract="false" OpenType="false">
+        <Key>
+          <PropertyRef Name="id"/>
+        </Key>
+        <Property Name="id" Type="Edm.Int32" Nullable="false"/>
+        <Property Name="desciption" Type="Edm.String"/>
+      </EntityType>
+      <EntityType Name="Processes" Abstract="false" OpenType="false">
+        <Key>
+          <PropertyRef Name="id"/>
+        </Key>
+        <Property Name="id" Type="Edm.Int32" Nullable="false"/>
+        <Property Name="desciption" Type="Edm.String"/>
+      </EntityType>
+      <EntityType Name="SAPProducts" Abstract="false" OpenType="false">
+        <Key>
+          <PropertyRef Name="id"/>
+        </Key>
+        <Property Name="id" Type="Edm.Int32" Nullable="false"/>
+        <Property Name="desciption" Type="Edm.String"/>
+      </EntityType>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
