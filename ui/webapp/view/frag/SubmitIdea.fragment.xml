@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Panel expandable="true" expanded="false" width="auto" class="sapUiResponsiveMargin">
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title text="Submit Experiment"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://message-information" press="handlePopoverPress"/>
+			</Toolbar>
+		</headerToolbar>
+		<content>
+			<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+				labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+				singleContainerFullSize="false">
+				<f:content>
+					<Label text="E-mail"/>
+					<Input id="email" type="Email"/>
+					<Label text="Short description of experiment"/>
+					<TextArea rows="8"/>
+				</f:content>
+			</f:SimpleForm>
+			<Button text="Submit" width="100%"/></content>
+	</Panel>
+</core:FragmentDefinition>
